@@ -93,6 +93,7 @@ contract NftMarketplace is ReentrancyGuard, Ownable {
         uint256 _tokenId,
         uint256 newPrice
     ) external isListed(_nftAddress, _tokenId) nonReentrant {
+    if (listing[_nftAddress][_tokenId].expirationTime < block.timestamp) revert ListingExpired();
         if (listing[_nftAddress][_tokenId].price == newPrice)
             revert PriceCannotBeTheSame();
         listing[_nftAddress][_tokenId].price = newPrice;

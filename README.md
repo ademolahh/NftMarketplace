@@ -1,13 +1,27 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This is a completely decentralized Nft marketplace, which allows to sell your ERC721 token
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+# Build and Test
+Use node version 14 or 16
 ```
+npm install
+```
+
+# Deployemnent
+```
+npx hardhat deploy --network <network>
+```
+
+# Test
+```
+npx hardhat test
+```
+# Contract Address
+**Goerli**
+```
+0xc0070801cd2e39e36dFf5e90E6B697dB916b1c63
+
+```
+

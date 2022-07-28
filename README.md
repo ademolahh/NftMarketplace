@@ -1,4 +1,4 @@
-# Sample Hardhat Project
+# NFT Marketplace
 
 This is a completely decentralized Nft marketplace, which allows to sell your ERC721 token
 

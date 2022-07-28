@@ -12,7 +12,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
       log: true,
     });
     log(
-      `NFT Markeplace contract successfully deployed to ${testErc721.address}`
+      `TestERC721 contract successfully deployed to ${testErc721.address}`
     );
   }
 };
